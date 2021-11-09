@@ -6,46 +6,45 @@
    <meta name="author" content="John Apazidis">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <style>
+	<style>
  
- 	body {
-		background-color:cadetblue;
-		}
-		#content{
-		width:90%;
-		margin:auto;
-		text-align:center;
-		}
+ 		body {
+background-color:cadetblue;
+}
+#content{
+width:90%;
+margin:auto;
+text-align:center;
+}
 
-		form {
-		font-size:1.5em;
-		margin-left:5%;
-		padding-top:5%;
-		background-color: cornsilk;
-		border:2px dotted #000;
-		}
-		
-		input {
-		margin-bottom:2%;
-		font-size: 1em;
-		}
-		
-		input#submit {
-		border:4px solid yellow;
-		border-radius: 50px 50px;
-		text-align: center;
-		background-color:chocolate;
-		color:white;
-		font-weight:bold;
-		padding: 20px;
-		}
+form {
+font-size:1.5em;
+margin-left:5%;
+padding-top:5%;
+background-color: cornsilk;
+border:2px dotted #000;
+}
+input, select, label {
+display:block;
+margin-bottom:2%;
+font-size: 1em;
+}
+input#submit {
+border:4px solid yellow;
+border-radius: 50px 50px;
+text-align: center;
+background-color:chocolate;
+color:white;
+font-weight:bold;
+padding: 20px;
+}
 
-		#submit:hover {
-		background-color:cornsilk;
-		color:chocolate;
-		font-size:150%;
-		border:2px solid black;
-		}
+#submit:hover {
+background-color:cornsilk;
+color:chocolate;
+font-size:150%;
+border:2px solid black;
+}
 
 	</style>
 
@@ -75,9 +74,10 @@
  	 <option value="Strawberry">Strawberry</option>
  	</select><br>
   <label>What do you want to do with your life?</label><br>
-  <input type="submit" value="Submit"><br>
   <textarea name="life goals" rows="10" cols="30">
-  
+  </textarea>
+    <input type="submit" value="Submit"><br>
+
 
   </form>
 

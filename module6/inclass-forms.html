@@ -1,0 +1,88 @@
+<head>
+    <title>Form </title>
+    <meta charset="UTF-8">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <meta name="author" content="John Apazidis">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <style>
+ 
+ 	body {
+		background-color:cadetblue;
+		}
+		#content{
+		width:90%;
+		margin:auto;
+		text-align:center;
+		}
+
+		form {
+		font-size:1.5em;
+		margin-left:5%;
+		padding-top:5%;
+		background-color: cornsilk;
+		border:2px dotted #000;
+		}
+		
+		input {
+		margin-bottom:2%;
+		font-size: 1em;
+		}
+		
+		input#submit {
+		border:4px solid yellow;
+		border-radius: 50px 50px;
+		text-align: center;
+		background-color:chocolate;
+		color:white;
+		font-weight:bold;
+		padding: 20px;
+		}
+
+		#submit:hover {
+		background-color:cornsilk;
+		color:chocolate;
+		font-size:150%;
+		border:2px solid black;
+		}
+
+	</style>
+
+    
+ </head>
+
+ <body>
+ 
+<div>
+	<form action="https://idesstage2.bc.edu/class/results.php" type="post"
+	</form>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+  <label for="flavors">Choose your favorite ice cream flavor!</label>
+  <select id="flavors" name="flavors" size="6" multiple>
+  	<option value="Vanilla">Vanilla</option>
+  	<option value="Pistachio">Pistachio</option>
+ 	 <option value="Rocky Road">Rocky Road</option>
+ 	 <option value="Chunky Monkey">Chunky Monkey</option>
+ 	 <option value="Chocolate">Chocolate</option>
+ 	 <option value="Strawberry">Strawberry</option>
+ 	</select><br>
+  <label>What do you want to do with your life?</label><br>
+  <input type="submit" value="Submit"><br>
+  <textarea name="life goals" rows="10" cols="30">
+  
+
+  </form>
+
+
+</div>
+
+ </body>
+</html>

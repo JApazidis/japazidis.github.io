@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Music Survey</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="">
+
+<style>
+
+body {
+font-size: 1.3em;
+background-color: beige;
+
+}
+content{
+width:90%;
+margin:auto;
+}
+
+h1, h2 {
+text-align:center;
+}
+
+form {
+margin-left:5%;
+}
+input {
+margin-bottom:2%;
+}
+input#submit {
+display:block;
+background-color:#33ff99;
+font-weight:bold;
+padding: 20px;
+font-size: 1.5em;
+}
+
+select option {
+font-size: 1.75em;
+width: 150px;
+}
+
+input[type=submit] {
+}
+
+	</style>
+
+</head>
+
+<body onload="checkCookie()">
+<h1>Music Survey</h1>
+<div id="welcome"></div>
+
+	<form id="data" method="post" onsubmit="setCookie('firstname',document.getElementById('fname').value,365);" enctype="multipart/form-data">
+
+<div>
+
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+
+  <p>How often do you download music?<p>
+
+  <input type="radio" id="once" name="often_download" value="Once in a while">
+  <label for="once">Once in a while</label><br>
+  <input type="radio" id="spotify" name="often_download" value="I use Spotify">
+  <label for="spotify">Spotify</label><br>
+  <input type="radio" id="what" name="often_download" value="What does download mean?">
+  <label for="what">What does download mean?</label>
+
+  <p>What is your favorite type of music?</p>
+  <select id="flavors" name="flavors" size="4" multiple>
+  	<option value="Rock">Rock</option>
+  	<option value="Jazz">Jazz</option>
+ 	  <option value="Classical">Classical</option>
+ 	  <option value="World">World</option>
+ 	</select><br>
+
+ <div class="custom-select">
+ <p>Where do you enjoy music</p>
+  <select id="enjoy" name="enjoy" size="5">
+    <option value="0">Select option:</option>
+    <option value="1">Home</option>
+    <option value="2">Work</option>
+    <option value="3">School</option>
+    <option value="4">Gym</option>
+  </select>
+</div>
+
+  <p>How does music affect your mood?</p>
+  <textarea name="lifegoals" rows="10" cols="60"></textarea>
+	<br><br>
+  <input type="submit" value="Submit"><br>
+
+  </form>
+</div>
+</body>
+
+<script>
+function setCookie(cookie_name,cookie_value,expiredays){
+    var exdate = new Date();
+    exdate.setDate(exdate.getDate()+expiredays);
+    if(expiredays==null)
+        document.cookie = cookie_name + "=" + escape(cookie_value) +"";
+    else
+        document.cookie = cookie_name + "=" + escape(cookie_value) + ";expires="
+        +exdate.toGMTString();
+}
+
+function getCookie(cookie_name){
+    if(document.cookie.length>0)
+    {
+      cookie_start=document.cookie.indexOf(cookie_name + "=");
+      if(cookie_start!=-1){
+            cookie_start=cookie_start + cookie_name.length +1;
+            cookie_end=document.cookie.indexOf(";",cookie_start);
+            if(cookie_end==-1)//if it's the last cookie
+                cookie_end = document.cookie.length;
+            return unescape (document.cookie.substring(cookie_start,cookie_end));
+        }
+    }
+    return "";
+}
+
+function checkCookie(){
+    firstname=getCookie('firstname');
+    if(firstname!=null && firstname!="")
+        document.getElementById("welcome").innerHTML = '<h2>Welcome again ' + firstname+ '!</h2>';
+}
+</script>
+
+</html>

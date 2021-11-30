@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Slideshow</title>
+    <meta charset="UTF-8">
+   <meta name="description" content="My Slideshow">
+   <meta name="keywords" content="my,slideshow,pictures">
+   <meta name="author" content="John Apazidis">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="">
+
+    <style>
+          
+
+
+    </style>
+ </head>
+
+ <body>
+
+<img name="slide" width = "400" height = "200">
+
+
+<script>
+
+
+var i = 0; 			
+var images = [];	
+var time = 3000;	
+	 
+
+  <images[0] = "https://1.bp.blogspot.com/-xO2DFdD1LTU/YaHDqMmh7iI/AAAAAAAA-JI/Bv3u7DZSc14cDqr7QPfbtsRSy7NIAIP2gCLcBGAsYHQ/w461-h345/AEAD10DC-FAD7-4443-A4CA-50E37FB611C3.JPEG";
+  <images[1] = "https://1.bp.blogspot.com/-Ro8wk4eL9YI/YZ2_IAtc1tI/AAAAAAAA9dI/2RMjZtbDrhcepcLjPoLW992E6b4D56eYACLcBGAsYHQ/w428-h640/afisa-ERGATA-DOULEIAS.jpeg";
+  <images[2] = "https://1.bp.blogspot.com/-OnZmKLQ943E/YYPPCn6j9EI/AAAAAAAA7S4/D7pWK3_-yYIoq62sI8--9OKYJxyQl4-awCLcBGAsYHQ/w400-h294/%25CE%2599%25CE%25A9%25CE%2591%25CE%259A%25CE%2595%25CE%2599%25CE%259C%25CE%2599%25CE%2594%25CE%2597%25CE%25A3%2B%25CE%2591%25CE%259D%25CE%2595%25CE%25A3%25CE%25A4%25CE%2597%25CE%25A3%2B2017.jpg";
+
+
+function changeImg(){
+	document.slide.src = images[i];
+
+	
+	if(i < images.length - 1){
+	  i++; 
+	} else { 
+		i = 0;
+	}
+
+	
+	setTimeout("changeImg()", time);
+}
+
+
+window.onload=changeImg;
+
+</script>
+
+
+
+ </body>
+</html>
+
+
+

@@ -1,7 +1,6 @@
 body {
     background-color: rgb(161, 185, 221);
     text-align: center;
-    padding:10px;
   }
   h1 {
     color: rgb(6, 6, 37);
@@ -16,3 +15,7 @@ body {
     font-size: 20px;
     text-align: justify;
   }
+
+.center {
+	text-align: center !important;
+}

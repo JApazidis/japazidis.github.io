@@ -8,7 +8,7 @@
    <meta name="author" content="John Apazidis">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link rel="stylesheet" href="mikis.css">
+    <link rel="stylesheet" href="mikis.css">
 
     <style>
   body {
@@ -22,13 +22,14 @@ body {
 .topnav {
   overflow: auto;
   background-color: #333;
+  height: 30px;
+  line-height: 30px;
 }
 
 .topnav a {
-  float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 4px 140px;
+  padding: 4px 20px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -48,45 +49,40 @@ body {
 }
 
 .footer {
-    position: fixed;
-    left: 10;
-    bottom: 20;
+	height: 50px;
+	font-size: 13px;
     width: 100%;
+	line-height: 50px;
     background-color: rgb(90, 109, 219);
     color: white;
     text-align: center;
-    padding-bottom: 0ch;
   }
+  
     </style>
  </head>
 
  <body>
-  <center>
+<div class="center">
 <img src="Mikis_the_Great.jpg" alt="Mikis The Great" height="200">
-</center>
+
 
 <div class="topnav">
-  <a class="active" href="index.html">Home</a>
+  <a href="index.html">Home</a>
   <a href="mikis1.html">Political Activist</a>
   <a href="mikis2.html">Musician</a>
-  <a href="mikis3.html">Contact</a>
+  <a class="active" href="mikis3.html">Contact</a>
   <a href="mikis4.html">Links</a>
-  </div>
+</div>	
 
-<center><h1>Mikis The Great: Dedicated to  Mikis Theodorakis</h1>
-</center>
+<h1>Mikis The Great: Dedicated to  Mikis Theodorakis</h1>
 
+	
 <h2>Join our Mailing List</h2>
 
-
 	<form action="https://idesstage2.bc.edu/class/results.php" type="post"
-	</form>
 	
 
-	
-<div>
 
-<form>
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Last name:</label><br>
@@ -94,53 +90,46 @@ body {
   <label for="email">Enter your email:</label><br>
   <input type="email" id="email" name="email">
   
-  </form>
+
   
-  <p>How did you find our web page?<p>
-  
-  <form>
+  <p style="text-align: center !important;">How did you find our web page?<br>
   <input type="radio" id="google" name="find_us" value="I did a web search.">
   <label for="search">I did a web search.</label><br>
   <input type="radio" id="facebook" name="facebook_page" value="I found your Facebook page.">
   <label for="facebook_page">I found your Facebook page.</label><br>
   <input type="radio" id="friend" name="friend" value="I was referred by a friend.">
   <label for="friend">I was referred by a friend.</label>
-</form>
+  </p>
 
 
- <form>
-  <label for="type">What is your favorite type of music?</label>
+
+
+  <p style="text-align: center !important;">What is your favorite type of music?
   <select id="flavors" name="flavors" size="4" multiple>
   	<option value="Rock">Rock</option>
   	<option value="Jazz">Jazz</option>
  	 <option value="Classical">Classical</option>
  	 <option value="World">World</option>
- 	</select><br>
- </form>
+	  </select></p>
+
  
- 
- 
- <div class="custom-select" style="width:200px;">
- <p>Did you enjoy our web page?</p>
+ <p style="text-align: center !important;">Did you enjoy our web page?
   <select>
     <option value="0">Select option:</option>
     <option value="1">Yes</option>
     <option value="2">No</option>
     <option value="3">Mixed feelings</option>
-  </select>
-</div>
+  </select></p><br>
  	
   <label>How could we improve this web page?</label><br>
   <textarea name="improve" rows="10" cols="60">
   </textarea>
-    <input type="submit" value="Submit"><br>
-
-
-  </form>
-
-<div class="footer">
-  <h6><p>Created with respect for Mikis Theodorakis by Ioannis Apazidis || japazidis@icloud.com</p></h6>
+  <br><br><input type="submit" value="Submit"><br>
+</form>	
 </div>
 
+<div class="footer">
+  <h4>Created with respect for Mikis Theodorakis by Ioannis Apazidis || japazidis@icloud.com</h4>
+</div>
  </body>
 </html>
